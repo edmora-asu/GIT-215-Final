@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --lt-purple: #BB9BFF;
+    --pink: #D1AFFF;
+    --sky-blue: #92A5FF; 
+    --dk-purple: #8988C9
+    --lt-pink: #EBD9F2;
+    --lt-gray: #808080; 
+    --dk-gray:  #222222; 
+
+    --fonts: 'Nimbus Mono PS', 'Courier New', monospace;
+}
+
+body {
+    font-family: var(--fonts);
+    line-height: 1.5;
+    color: var(--dk-gray);
+    background-image: url(/images/coolbackgrounds-gradient-salt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    text-align: center;
+}
+
+.heading {
+    background-color: var(--sky-blue);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left:20px; 
+    padding-right: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.brand h1 {
+    margin-bottom: 25px;
+    font-size: 3rem;
+}
+
+header{
+    background-image: url(/images/swiss-valley.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    color: var(--dk-gray);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--dk-gray);
+    color: var(--sky-blue) ;
+    border-radius: 20%;
+    text-decoration: underline;
+}
+
+.intro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right:20px;
+    max-width: 900px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background-color: var(--sky-blue);
+}
+
+.intro p {
+    font-size: 1.25rem;
+    color: var(--pink);
+    line-height: 1.25;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#amenities {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#amenities img {
+    width: 650px;
+}
+
+#amenities h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--lt-purple);
+}
+
+#amenities p {
+    color: white;
+    justify-content: center;
+}
+
+#escape {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+#escape img{
+    width: 650px;
+}
+
+#escape h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--lt-purple);
+}
+
+#escape p{
+    color: white;
+    justify-content: center;
+}
+
+#contact-us {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#form-build {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+}   
+
+input, label, textarea, input[type="submit"] {
+    display: block;
+    font-family: var(--fonts);
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 20px;
+    color: var(--pink);
+}
+
+
